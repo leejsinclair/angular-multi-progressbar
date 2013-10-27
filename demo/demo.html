@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="../multiProgress.js"></script>
+    <link rel="stylesheet" href="../bootstrap-progress-bar.css" />
+    <link rel="stylesheet" href="../multiProgress.css" />
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-app="test">
+  	<div ng-controller="testCtrl" class="wrapper">
+    	<h1>Angular is <span ng-bind="angularStatus">not running</span></h1>
+    	<div ng-repeat="file in files">
+    		<input type="text" ng-model="file.label" />
+    		<input type="text" ng-model="file.percent" />
+        <button ng-click="addPercentage($index, 10)" btype="button">Add 10 %</button>
+    	</div>
+    	<button type="button" ng-click="addFile()">Create progress bar</button>
+
+    	<div position="bottom" class="multi-progress"></div>
+    </div>
+  </body>
+
+</html>

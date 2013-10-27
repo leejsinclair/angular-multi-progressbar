@@ -1,0 +1,22 @@
+/**
+ * Styles for multi progress bar
+ */
+.multi-progress-container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.multi-progress-bar {
+	width: 20%;
+	float: left;
+}
+
+.multi-progress-bar .progress {
+	margin-bottom: 0;
+}
+
+.progress-container {
+	padding: 0.5em;
+}
