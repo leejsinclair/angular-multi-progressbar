@@ -3,6 +3,8 @@ angular-multi-progressbar
 
 Display multiple progress bars on screen. Built on bootstrap v3 progress bar CSS components.
 
+![Example](https://github.com/leejsinclair/angular-multi-progressbar/blob/master/demo/demo.png?raw=true "Example")
+
 Include a script and css, e.g.
 ```html
 <script src="../multiProgress.js"></script>
